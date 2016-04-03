@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app='cat-buddy'>
+  <head>
+    <meta charset="utf-8" />
+    <title>Cat Buddy</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+  </head>
+  <body>
+    <h1>Cat Buddy</h1>
+    <nav>
+      <a href="#/search/cats">Find a Cat Buddy!</a>
+      <a href="#/saved/cats">Saved Cat Buddies</a>
+    <!-- the ng-view directive is where our templates will be loaded into when naviagted to -->
+    <div ng-view></div>
+
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-route/angular-route.js"></script>
+
+
+    <script src="app/client.js"></script>
+  </body>
+</html>
