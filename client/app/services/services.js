@@ -40,10 +40,13 @@ angular.module('cat-buddy.services', [])
     return $http({
       method: 'GET',
       url: '/api/' + animalName
+    })
+    .then(function(resp) {
+      return resp.data;
     });
   };
 
-  var addOneToSaved = function(animal) {
+  var addOneToSaved = function(animal, animalName) {
     return $http({
       method: 'POST',
       url: '/api/' + animalName,

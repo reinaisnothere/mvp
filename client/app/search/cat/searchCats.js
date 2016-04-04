@@ -17,7 +17,7 @@ angular.module('cat-buddy.search-cats', [])
   };
 
   $scope.addCatToSaved = function(cat) {
-    Animals.addOneToSaved(cat)
+    Animals.addOneToSaved(cat, 'cat')
       .catch(function(error) {
         console.error.bind(console, error);
       });
