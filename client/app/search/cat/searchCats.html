@@ -1,0 +1,7 @@
+<form name="searchCatForm" ng-submit="findCatsByZipCode()">
+  <input type="text" ng-model="zipCode"></input>
+  <button type="submit" ng-click="findCatsByZipCode()" value="Search">Search</button>
+</form>
+<div ng-repeat="cat in data.cats">
+  {{cat}}
+</div>
