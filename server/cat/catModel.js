@@ -15,6 +15,8 @@ var CatSchema = new mongoose.Schema({
 
   photo: String,
 
+  'contact-name': String,
+
   phone: String,
 
   email: String,
