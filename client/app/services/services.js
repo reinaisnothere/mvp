@@ -18,8 +18,16 @@ angular.module('cat-buddy.services', [])
             'contact-name': cat.contact.name ? cat.contact.name['$t'] : '',
             phone: cat.contact.phone ? cat.contact.phone['$t'] : '',
             email: cat.contact.email ? cat.contact.email['$t'] : '',
-            zip: cat.contact.zip['$t']
+            zip: cat.contact.zip['$t'],
+            sex: cat.sex['$t'],
+            health: []
           };
+          if (cat.options && cat.options.option) {
+            for (var j = 0; j < cat.options.option.length; j++) {
+              var healthInfo = cat.options.option[j]['$t'];
+              simplifiedCat.health.push(healthInfo);
+            }
+          }
           scope.data.cats.push(simplifiedCat);
         }
       }

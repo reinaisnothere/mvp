@@ -21,7 +21,11 @@ var CatSchema = new mongoose.Schema({
 
   email: String,
 
-  zip: String
+  zip: String,
+
+  sex: String,
+
+  health: Array
 
 });
 
