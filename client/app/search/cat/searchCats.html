@@ -1,6 +1,5 @@
-<form name="searchCatForm" ng-submit="findCatsByZipCode()">
-  <input type="text" ng-model="zipCode"></input>
-  <button type="submit" ng-click="findCatsByZipCode()" value="Search">Search</button>
+<form name="searchCatForm" ng-submit="newFindCatsByZipCode()">
+  <input type="text" placeholder="Type your zip code, then hit 'Enter!'" ng-model="zipCode"></input>
 </form>
 <div infinite-scroll="findCatsByZipCode()" infinite-scroll-distance="1" infinite-scroll-disabled="busyLoadingData">
   <div ng-repeat="cat in cats">
