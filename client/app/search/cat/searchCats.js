@@ -2,12 +2,13 @@ angular.module('cat-buddy.search-cats', [])
 
 .controller('SearchCatsController', function ($scope, Animals) {
 
-  $scope.data = {};
+  $scope.cats = [];
   var offset = 0;
+  var count = 10;
 
   $scope.findCatsByZipCode = function() {
-    Animals.getAllFromInternetByZipCode('cat', $scope.zipCode, 20, offset, $scope);
-    offset += 20;
+    Animals.getAllFromInternetByZipCode('cat', $scope.zipCode, count, offset, $scope);
+    offset += count;
   };
 
   $scope.addCatToSaved = function(cat) {

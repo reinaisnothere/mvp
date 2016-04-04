@@ -5,7 +5,6 @@ angular.module('cat-buddy.services', [])
     return $http.jsonp('http://api.petfinder.com/pet.find?' + 'key=' + PETFINDER_API_KEY + '&animal=' + animalName + '&location=' + zipCode + '&count=' + count + '&format=json' + '&offset=' + offset + '&callback=JSON_CALLBACK')
     .success(function(resp) {
       var cats = resp.petfinder.pets.pet;
-      scope.data.cats = [];
       for (var i = 0; i < cats.length; i++) {
         var cat = cats[i];
         if (cat.media.photos && cat.contact) {
@@ -28,7 +27,7 @@ angular.module('cat-buddy.services', [])
               simplifiedCat.health.push(healthInfo);
             }
           }
-          scope.data.cats.push(simplifiedCat);
+          scope.cats.push(simplifiedCat);
         }
       }
     })

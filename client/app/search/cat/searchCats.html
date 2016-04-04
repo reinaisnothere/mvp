@@ -2,7 +2,12 @@
   <input type="text" ng-model="zipCode"></input>
   <button type="submit" ng-click="findCatsByZipCode()" value="Search">Search</button>
 </form>
-<div ng-repeat="cat in data.cats">
-  {{cat}}
-  <hr>
+<div infinite-scroll="findCatsByZipCode()" infinite-scroll-distance="1" infinite-scroll-disabled="busyLoadingData">
+  <div ng-repeat="cat in cats">
+    <img src={{cat.photo}}>
+    <div>{{cat.name}}</div>
+    <div>{{cat.age}}</div>
+    <div>{{cat.description}}</div>
+    <hr>
+  </div>
 </div>
