@@ -1,4 +1,4 @@
-var Cat = require(__dirname + './catModel.js');
+var Cat = require(__dirname + '/catModel.js');
 var Q = require('q');
 
 // Promisify a few mongoose methods with the `q` promise library
@@ -13,7 +13,7 @@ module.exports = {
       .then(function(cats) {
         res.json(cats);
       })
-      .fail(function(err)) {
+      .fail(function(err) {
         next(err);
       });
   },
