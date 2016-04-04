@@ -1,7 +1,9 @@
 {
   "name": "cat-buddy",
   "version": "0.0.0",
-  "authors": ["Reina Mei <reinameic@gmail.com>"],
+  "authors": [
+    "Reina Mei <reinameic@gmail.com>"
+  ],
   "license": "MIT",
   "ignore": [
     "**/.*",
@@ -11,6 +13,8 @@
   ],
   "dependencies": {
     "angular": "~1.3.16",
-    "angular-route": "~1.3.16"
+    "angular-route": "~1.3.16",
+    "ngInfiniteScroll": "1.0.0",
+    "jquery": "^2.2.2"
   }
 }
