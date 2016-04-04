@@ -22,3 +22,6 @@ client/lib
 .floobit
 .floo
 .flooignore
+
+# API Keys
+client/app/config/petfinder.js

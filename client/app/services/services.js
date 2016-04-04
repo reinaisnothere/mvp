@@ -6,7 +6,7 @@ angular.module('cat-buddy.services', [])
       method: 'GET',
       url: 'http://api.petfinder.com/pet.find',
       data: {
-        key: 'bfa5c5839521c697c710edb7f23e7fb0', //to fix
+        key: PETFINDER_API_KEY, //to fix
         animal: animalName,
         count: 20,
         offset: offset,
