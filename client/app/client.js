@@ -1,15 +1,18 @@
 angular.module('cat-buddy', [
-  'ngRoute'
+  'ngRoute',
+  'cat-buddy.services',
+  'cat-buddy.search-cats',
+  'cat-buddy.saved-cats'
 ])
 .config(function($routeProvider) {
   $routeProvider
     .when('/search/cats', {
       templateUrl: 'app/search/cat/searchCats.html',
-      controller: ''
+      controller: 'SearchCatsController'
     })
     .when('/saved/cats', {
       templateUrl: 'app/saved/cat/savedCats.html',
-      controller: ''
+      controller: 'SavedCatsController'
     })
     .otherwise({
       redirectTo: '/search/cats'
