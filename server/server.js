@@ -11,8 +11,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + '/../client'));
 
-app.get('api/cats', catController.allCats);
-app.post('api/cats', catController.newCat);
+app.get('api/cat', catController.allCats);
+app.post('api/cat', catController.newCat);
 
 app.listen(8000); //to fix
 
