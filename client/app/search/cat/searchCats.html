@@ -1,7 +1,7 @@
 <form name="searchCatForm" ng-submit="newFindCatsByZipCode()">
   <input type="text" placeholder="Type your zip code, then hit 'Enter!'" ng-model="zipCode"></input>
 </form>
-<div infinite-scroll="findCatsByZipCode()" infinite-scroll-distance="1" infinite-scroll-disabled="busyLoadingData">
+<div infinite-scroll="findCatsByZipCode()" infinite-scroll-distance="1" infinite-scroll-disabled="busyLoadingData" infinite-scroll-immediate-check="false">
   <div ng-repeat="cat in cats">
     <img src={{cat.photo}}>
     <div ng-click="addCatToSaved(cat)">{{cat.name}}</div>
