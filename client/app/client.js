@@ -1,5 +1,6 @@
 angular.module('cat-buddy', [
   'ngRoute',
+  'infinite-scroll',
   'cat-buddy.services',
   'cat-buddy.search-cats',
   'cat-buddy.saved-cats'
