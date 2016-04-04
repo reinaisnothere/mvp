@@ -1,1 +1,7 @@
-<div ng-repeat></div>
+<div ng-repeat="cat in cats">
+  <img src={{cat.photo}}>
+  <div>{{cat.name}}</div>
+  <div>{{cat.age}}</div>
+  <div>{{cat.description}}</div>
+  <hr>
+</div>

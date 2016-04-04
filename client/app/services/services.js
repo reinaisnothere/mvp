@@ -36,7 +36,7 @@ angular.module('cat-buddy.services', [])
     });
   };
 
-  var getAllFromSaved = function() {
+  var getAllFromSaved = function(animalName) {
     return $http({
       method: 'GET',
       url: '/api/' + animalName
