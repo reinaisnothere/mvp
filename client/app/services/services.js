@@ -1,14 +1,14 @@
 angular.module('cat-buddy.services', [])
 .factory('Animals', function($http) {
-  var getAllFromInternetByZipCode = function(animalName, zipCode, offset) {
+  var getAllFromInternetByZipCode = function(animalName, zipCode, count, offset) {
     offset = offset || 0;
     return $http({
       method: 'GET',
       url: 'http://api.petfinder.com/pet.find',
       data: {
-        key: PETFINDER_API_KEY, //to fix
+        key: PETFINDER_API_KEY,
         animal: animalName,
-        count: 20,
+        count: count,
         offset: offset,
         location: zipCode,
         format: 'json'
