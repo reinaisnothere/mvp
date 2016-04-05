@@ -7,18 +7,22 @@ body {
 h1 {
   padding: 40px 0 20px 0;
   margin: auto;
-  text-align: center
+  text-align: center;
+  background-color: green;
 }
 
 nav {
   padding: 10px 0;
-  text-align: center
+  text-align: center;
+  background-color: blue;
+  font-color: white;
 }
 
 a {
   padding: 10px 30px;
   text-decoration: none;
-  font-size: 20px
+  font-size: 20px;
+  color: white;
 }
 
 input {
@@ -37,9 +41,9 @@ img {
   vertical-align: center
 }
 
-.round-img {
+.headshot {
   max-width: 300px;
-  max-height: 300px;
+  background-clip: square;
   overflow: hidden;
-  border-radius: 5px;
+  border-radius: 10px;
 }
