@@ -1,9 +1,13 @@
-<div ng-repeat="cat in cats">
-  <div class="headshot">
-    <img src={{cat.photo}}>
+<div class="container">
+  <div ng-repeat="cat in cats">
+    <div class="headshot">
+      <img src={{cat.photo}}>
+    </div>
+    <div class="info">
+      <div>{{cat.name}}</div>
+      <div>{{cat.age}}</div>
+      <div>{{cat.description}}</div>
+    </div>
+    <hr>
   </div>
-  <div>{{cat.name}}</div>
-  <div>{{cat.age}}</div>
-  <div>{{cat.description}}</div>
-  <hr>
 </div>
