@@ -1,7 +1,8 @@
 body {
   width: 90%;
   margin: auto;
-  background-color: #bad474;
+  background-image: url('../assets/paws.jpg');
+  /*background-color: #bad474;*/
 }
 
 h1 {
@@ -55,6 +56,8 @@ img {
 }
 
 .info {
+  color: #1A1303;
+  font-weight: 700;
   display: inline-block;
   float: right;
 }
