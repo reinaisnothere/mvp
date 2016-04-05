@@ -11,12 +11,14 @@ h1 {
 }
 
 nav {
-  padding: 20px 0;
+  padding: 10px 0;
   text-align: center
 }
 
 a {
-  padding: 20px;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 20px
 }
 
 input {
@@ -25,5 +27,19 @@ input {
   margin: 20px auto;
   border-radius: 5px;
   padding: 5px;
+  font-size: 18px
 }
 
+
+img {
+  margin: auto;
+  /*float: left;*/
+  vertical-align: center
+}
+
+.round-img {
+  max-width: 300px;
+  max-height: 300px;
+  overflow: hidden;
+  border-radius: 5px;
+}
