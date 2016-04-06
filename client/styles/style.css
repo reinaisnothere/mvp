@@ -47,7 +47,6 @@ img {
   background-clip: square;
   overflow: hidden;
   border-radius: 5px;
-  display: inline-block;
 }
 
 .container {
@@ -58,6 +57,4 @@ img {
 .info {
   color: #1A1303;
   font-weight: 700;
-  display: inline-block;
-  float: right;
 }

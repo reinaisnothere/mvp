@@ -11,7 +11,10 @@
         <div>{{cat.name}}</div>
         <button ng-click="addCatToSaved(cat)">Add Me!</button>
         <div>{{cat.age}}</div>
+        <div ng-repeat="stat in cat.health">{{stat}}</div>
         <div>{{cat.description}}</div>
+        <div>{{cat['contact-name']}}</div>
+        <div>{{cat.phone}}</div>
       </div>
       <hr>
     </div>
